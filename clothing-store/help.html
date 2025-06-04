@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="kkk.css">
+    <title>Help</title>
+</head>
+
+<body>
+    <div class="header__ba"></div>
+    <nav class="section__container nav__container">
+      <a href="#" class="nav__logo">Suwonsomnia.</a>
+      <ul class="nav__links">
+        <li class="link"><a href="kkkkk.html">HOME</a></li>
+        <li class="link"><a href="home.html">SHOP</a></li>
+        <li class="link"><a href="home.html">NEW ARRIVAL</a></li>
+        <li class="link"><a href="help.html">HELP</a></li>
+      </ul>
+      <div class="nav__icons">
+        <span><i class="ri-shield-user-line"></i></span>
+        <span><i class="ri-search-line"></i></span>
+        <span><i class="ri-shopping-bag-2-line"></i></span>
+      </div>
+    </nav>
+    <P align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.970775260557!2d110.80701131477676!3d-7.578159994535138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a16783dbd32eb%3A0xe852ba0aa1842158!2sFakultas%20Ilmu%20Komputer%20-%20Universitas%20Duta%20Bangsa!5e0!3m2!1sid!2sid!4v1687718600874!5m2!1sid!2sid" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></P>
+    <br><br>
+  
+    <form align="center">
+      <h2>Keep in touch with us</h2>
+      <br>
+
+      Nama:
+      <input type="text" id="nama" name="nama"><br><br>
+      Email:
+      <input type="email" id="email" name="email"><br><br>
+      Pesan:
+      <textarea id="pesan" name="pesan" rows="5" cols="30"></textarea><br><br>
+      <input type="submit" value="Kirim">
+      
+    </form>
+
+    <br><br>
+     
+  
+      <p align="center">Nama: <span id="hasil-nama"></span></p>
+      <p align="center">Email: <span id="hasil-email"></span></p>
+      <p align="center">Pesan: <span id="hasil-pesan"></span></p>
+      
+      <script>
+      
+      const form = document.querySelector('form');
+      const nama = document.querySelector('#nama');
+      const email = document.querySelector('#email');
+      const pesan = document.querySelector('#pesan');
+      const hasilNama = document.querySelector('#hasil-nama');
+      const hasilEmail = document.querySelector('#hasil-email');
+      const hasilPesan = document.querySelector('#hasil-pesan');
+      form.addEventListener('submit', function(event) {
+      
+      event.preventDefault(); // Mencegah halaman reload saat submit
+      hasilNama.textContent = nama.value;
+      hasilEmail.textContent = email.value;
+      hasilPesan.textContent = pesan.value;
+      form.reset(); // Mereset form setelah submit
+      
+      });
+
+      </script>
+          
+            <br><br>
+
+            <hr>
+
+
+        
+</body>
+</html>
