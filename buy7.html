@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="buy.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header__ba">Free Shipping on Orders Over $50</div>
+    <nav class="section__container nav__container">
+      <a href="#" class="nav__logo">Suwonsomnia.</a>
+      <ul class="nav__links">
+        <li class="link"><a href="kkkkk.html">HOME</a></li>
+        <li class="link"><a href="home.html">SHOP</a></li>
+        <li class="link"><a href="home.html">NEW ARRIVAL</a></li>
+        <li class="link"><a href="help.html">HELP</a></li>
+      </ul>
+      <div class="nav__icons">
+        <span><i class="ri-shield-user-line"></i></span>
+        <span><i class="ri-search-line"></i></span>
+        <span><i class="ri-shopping-bag-2-line"></i></span>
+      </div>
+    </nav>
+
+    <div class="buy__img">
+        <img src="https://i.pinimg.com/736x/ee/83/39/ee8339fc2d88bc2c942ee2b738ff37e5.jpg">
+        <br><br>
+        <h1>Rihana vintage</h1>
+        <br>
+        <p><del>Rp120.000</del> Rp99.000</p>
+        <br>
+        This shirt is a vintage shirt with a Design Theme<br>Rihana
+    </div> 
+    <br>
+    SIZE:
+    <br><br>
+    <table class="table1">
+		<tr>
+			<th>Size</th>
+			<th>Lebar</th>
+			<th>Tinggi</th>
+			<th>Tanggan</th>
+		</tr>
+		<tr>
+			<td>S</td>
+			<td>56cm</td>
+			<td>68cm</td>
+			<td>23cm</td>
+		</tr>
+		<tr>
+			<td>M</td>
+			<td>59cm</td>
+			<td>69cm</td>
+			<td>23cm</td>
+		</tr>
+		<tr>
+			<td>L</td>
+			<td>61cm</td>
+			<td>70cm</td>
+			<td>24cm</td>
+		</tr>
+		<tr>
+			<td>XL</td>
+			<td>63cm</td>
+			<td>72cm</td>
+			<td>25cm</td>
+		</tr>
+		
+	</table>
+    <br>
+    <td>Size:</td>
+    <td>
+        <select name="Size" id="Size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+    </td>
+
+    
+    <script>
+            const jenis1 = document.querySelector('#Size1');
+            const jenis2 = document.querySelector('#Size2');
+            const hasilJenis = document.querySelector('#hasil-Size');
+
+            form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Mencegah halaman reload saat submit
+            hasilJenis.textContent = jenis1.checked ? jenis1.value : jenis2.value;
+            form.reset(); // Mereset form setelah submit
+        });
+
+        function getSelectedCheckboxes(checkboxes) {
+            const selectedCheckboxes = [];
+            checkboxes.forEach(function (checkbox) {
+                if (checkbox.checked) {
+                    selectedCheckboxes.push(checkbox.value);
+                }
+            });
+            return selectedCheckboxes.join(', ');
+        }
+    </script>
+</body>
+
+</html>
